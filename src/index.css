@@ -1,13 +1,124 @@
-body {
+/* Global Styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  padding: 20px; /* Padding around the header */
+  text-align: center; /* Centered text */
+  margin-bottom: 50px;
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333; /* Dark background */
+  color: white; /* White text color */
+  text-align: center; /* Centered text */
+  padding: 10px; /* Padding around the footer */
+  position: relative; /* Fix the footer at the bottom */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
+  margin-top: 90px;
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+}
+
+
+/* Container for both Login and Signup */
+.container {
+  background-color: white;
+  width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #f7f9fc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+/* Submit button */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
 }
